@@ -1,46 +1,97 @@
 
-/* Tipografía global */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-/* Header */
-header {
-    border-bottom: 2px solid #ccc;
-}
-
-/* Slider */
-#slider .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    border-radius: 5px;
-}
-
-/* Productos */
-.row > div {
-    border: 1px solid #ccc;
-    padding: 10px;
-    background: #f9f9f9;
-    border-radius: 5px;
-    transition: transform 0.3s;
-}
-
-.row > div:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer */
-footer {
-    background-color: #222;
-    color: #fff;
-}
-
-footer a {
-    color: #fff;
+a {
     text-decoration: none;
+    color: white;
 }
 
-footer a:hover {
+.header {
+    background-color: brown;
+    color: white;
+    padding: 10px 0;
+}
+
+.header .logo {
+    max-height: 60px;
+    object-fit: contain;
+}
+
+.header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.header nav ul li {
+    list-style: none;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header nav ul li a:hover {
     text-decoration: underline;
+}
+
+
+
+
+
+
+.productos h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.productos .row {
+    gap: 20px;
+}
+
+.productos .col-md-4 img {
+    transition: transform 0.3s ease;
+}
+
+.productos .col-md-4 img:hover {
+    transform: scale(1.05);
+}
+
+.productos button {
+    margin-top: 10px;
+}
+
+
+.footer {
+    background-color: brown;
+    color: white;
+    text-align: center;
+}
+
+.footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    list-style: none;
+}
+
+
+@media (max-width: 768px) {
+    .header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productos .row {
+        flex-direction: column;
+        align-items: center;
+    }
 }
