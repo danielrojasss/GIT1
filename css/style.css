@@ -1,106 +1,46 @@
-/* CSS general para el sitio */
+
+/* Tipografía global */
 body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
 }
 
+/* Header */
 header {
-    display: flex;
-    background-color: brown;
-    justify-content: center;
-
-    align-items: center;
-
-    text-transform: capitalize;
+    border-bottom: 2px solid #ccc;
 }
 
-
-
-header {
-    background-color: brown;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Slider */
+#slider .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
 }
 
-header img {
-    width: 150px;
-    height: auto;
+/* Productos */
+.row > div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    transition: transform 0.3s;
 }
 
-header nav ul {
-    display: flex;
-    gap: 20px;
-    margin: 0;
-}
-
-header nav ul li {
-    list-style: none;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Carousel */
-.carousel-item img {
-    max-height: 500px;
-    object-fit: cover;
-}
-
-/* Sección de productos */
-.card img {
-    height: 200px;
-    object-fit: cover;
+.row > div:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
-.bg-brown {
-    background-color: brown;
-    align-content: center;
-    text-align: center;
-    size: 100px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    font-weight: 50px;
-    text-decoration: double;
+footer {
+    background-color: #222;
+    color: #fff;
 }
 
-footer ul {
-    list-style: none;
-    padding: 0;
+footer a {
+    color: #fff;
+    text-decoration: none;
 }
 
-footer ul li {
-    margin: 5px 0;
-}
-footer img {
-     display: flex;
-        border: 5px solid rgb(139, 0, 0);
-       height: 150px;
-       width: 200px;
-      
-    }
-
-/* Responsividad */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    header img {
-        width: 120px;
-    }
-
-    header nav ul {
-        flex-direction: column;
-    }
-
-    .card img {
-        height: 150px;
-    }
+footer a:hover {
+    text-decoration: underline;
 }
